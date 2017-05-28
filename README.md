@@ -6,7 +6,7 @@ Click [here](https://github.com/hasanaygun/dbf-table-manager/releases/latest) fo
 
 ## Build Dependencies
 
-To compile DBF Table Manager, the following packages must be installed:
+To build DBF Table Manager, the following packages must be installed:
 
 - [FPSpreadsheet](http://wiki.freepascal.org/FPSpreadsheet)
 - [RichMemo](http://wiki.freepascal.org/RichMemo)
