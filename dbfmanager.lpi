@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="dbfmanager"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="7">
+      <Item1>
+        <PackageName Value="laz_fpspreadsheet"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="RunTimeTypeInfoControls"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LazControls"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="richmemopackage"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="DBFLaz"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LCL"/>
+      </Item7>
+    </RequiredPackages>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="dbfmanager.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="../../dbfmanager/main_unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../dbfmanager/createtable2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frCreateTable2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../dbfmanager/addnewfield.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frAddNewField"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../dbfmanager/restructure_table.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frRestructure"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../dbfmanager/dbfpublics.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../dbfmanager/define_index.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frDefineIndex"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../dbfmanager/table_fields.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frFields"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../dbfmanager/index_help.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmIndexHelp"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../dbfmanager/about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../dbfmanager/memo_view.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frMemoView"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../dbfmanager/calendar_unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frCalendar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../dbfmanager/new_opt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frNewOpt"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../dbfmanager/createtable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frCreateTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../dbfmanager/filter_records.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frFilter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../dbfmanager/locate_unit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frLocate"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../dbfmanager/clonetable.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frCloneTable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../dbfmanager/export_dbf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frExport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit17>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="dbfmanager"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

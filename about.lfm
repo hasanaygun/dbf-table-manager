@@ -1,0 +1,126 @@
+object frAbout: TfrAbout
+  Left = 242
+  Height = 240
+  Top = 130
+  Width = 294
+  BorderStyle = bsSingle
+  Caption = 'About'
+  ClientHeight = 240
+  ClientWidth = 294
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object BitBtn1: TBitBtn
+    Left = 108
+    Height = 27
+    Top = 193
+    Width = 75
+    Cancel = True
+    Caption = 'Close'
+    ModalResult = 2
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 28
+    Top = 0
+    Width = 294
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'DBF Table Manager'
+    Font.Color = clBlue
+    Font.Style = [fsBold]
+    Layout = tlBottom
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 12
+    Height = 14
+    Top = 57
+    Width = 62
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Author'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 12
+    Height = 14
+    Top = 76
+    Width = 62
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Mail'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 87
+    Height = 14
+    Top = 38
+    Width = 162
+    AutoSize = False
+    Caption = ' :  0.4'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 87
+    Height = 14
+    Top = 57
+    Width = 168
+    AutoSize = False
+    Caption = ' :  Hasan AYGÜN'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 87
+    Height = 14
+    Top = 76
+    Width = 185
+    AutoSize = False
+    Caption = ' :  hasanaygun@mail.com'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 19
+    Height = 14
+    Top = 104
+    Width = 239
+    Caption = 'DBF Table Manager is a tool to View, Create'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 20
+    Height = 14
+    Top = 122
+    Width = 238
+    Caption = 'and Manage Dbf Table that run on Windows'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 20
+    Height = 14
+    Top = 141
+    Width = 250
+    Caption = 'and Linux. Supports only DBase III+, Dbase IV'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 19
+    Height = 14
+    Top = 160
+    Width = 81
+    Caption = 'and DBase VII.'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 12
+    Height = 14
+    Top = 38
+    Width = 62
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Version'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,147 @@
+object frLocate: TfrLocate
+  Left = 238
+  Height = 316
+  Top = 140
+  Width = 425
+  BorderStyle = bsSingle
+  Caption = 'Find Records'
+  ClientHeight = 316
+  ClientWidth = 425
+  Font.Height = -12
+  Font.Name = 'Sans'
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Edit1: TEdit
+    Left = 160
+    Height = 25
+    Top = 246
+    Width = 100
+    AutoSize = False
+    OnEditingDone = Edit1EditingDone
+    OnKeyDown = Edit1KeyDown
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 4
+  end
+  object ComboBox1: TComboBox
+    Left = 160
+    Height = 25
+    Top = 222
+    Width = 100
+    AutoSize = False
+    ItemHeight = 0
+    Items.Strings = (
+      'Yes'
+      'No'
+      ''
+    )
+    OnEditingDone = ComboBox1EditingDone
+    OnKeyDown = ComboBox1KeyDown
+    OnKeyPress = ComboBox1KeyPress
+    TabOrder = 3
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 160
+    Height = 24
+    Top = 198
+    Width = 80
+    AutoSize = False
+    CharCase = ecNormal
+    MaxLength = 10
+    TabOrder = 5
+    OnEditingDone = MaskEdit1EditingDone
+    OnKeyDown = Edit1KeyDown
+    EditMask = '00/00/0000;1;_'
+    Text = '  -  -    '
+    SpaceChar = '_'
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 322
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = 'Find'
+    OnClick = SpeedButton1Click
+  end
+  object ckCaseSensitive: TCheckBox
+    Left = 302
+    Height = 21
+    Top = 169
+    Width = 117
+    AutoSize = False
+    Caption = 'Case sensitive'
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ckPartialKey: TCheckBox
+    Left = 302
+    Height = 21
+    Top = 141
+    Width = 111
+    AutoSize = False
+    Caption = 'Partial key'
+    Checked = True
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 2
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 322
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Cancel'
+    OnClick = SpeedButton2Click
+  end
+  object sgFields: TStringGrid
+    Left = 8
+    Height = 299
+    Top = 4
+    Width = 291
+    Columns = <    
+      item
+        ButtonStyle = cbsCheckboxColumn
+        Color = clBtnFace
+        Title.Caption = '[X]'
+        Width = 27
+      end    
+      item
+        Font.Height = -12
+        Font.Name = 'Sans'
+        Font.Style = [fsItalic]
+        ReadOnly = True
+        Title.Caption = ' Select Field(s) '
+        Width = 120
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = ' Search String'
+        Width = 120
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Native'
+        Visible = False
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Digit'
+        Visible = False
+      end>
+    FixedCols = 0
+    Font.Height = -12
+    Font.Name = 'Sans'
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goAlwaysShowEditor, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -12
+    TitleFont.Name = 'Sans'
+    OnCheckboxToggled = sgFieldsCheckboxToggled
+    OnSelectEditor = sgFieldsSelectEditor
+  end
+end

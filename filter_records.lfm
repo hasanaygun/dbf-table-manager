@@ -1,0 +1,176 @@
+object frFilter: TfrFilter
+  Left = 238
+  Height = 315
+  Top = 140
+  Width = 482
+  ActiveControl = sgFields
+  BorderStyle = bsSingle
+  Caption = 'Filter Records'
+  ClientHeight = 315
+  ClientWidth = 482
+  Font.Height = -12
+  Font.Name = 'Sans'
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object Edit1: TEdit
+    Left = 160
+    Height = 25
+    Top = 246
+    Width = 100
+    AutoSize = False
+    OnEditingDone = Edit1EditingDone
+    OnKeyDown = Edit1KeyDown
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 4
+  end
+  object ComboBox1: TComboBox
+    Left = 160
+    Height = 25
+    Top = 222
+    Width = 100
+    AutoSize = False
+    ItemHeight = 0
+    Items.Strings = (
+      'Yes'
+      'No'
+    )
+    OnEditingDone = ComboBox1EditingDone
+    OnKeyDown = ComboBox1KeyDown
+    OnKeyPress = ComboBox1KeyPress
+    TabOrder = 3
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 160
+    Height = 24
+    Top = 198
+    Width = 80
+    AutoSize = False
+    CharCase = ecNormal
+    MaxLength = 10
+    TabOrder = 5
+    OnEditingDone = MaskEdit1EditingDone
+    OnKeyDown = Edit1KeyDown
+    EditMask = '00/00/0000;1;_'
+    Text = '  -  -    '
+    SpaceChar = '_'
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 370
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = 'Filter'
+    OnClick = SpeedButton1Click
+  end
+  object ckCaseSensitive: TCheckBox
+    Left = 350
+    Height = 21
+    Top = 169
+    Width = 123
+    AutoSize = False
+    Caption = 'Case sensitive'
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ckPartialCompare: TCheckBox
+    Left = 350
+    Height = 21
+    Top = 141
+    Width = 128
+    AutoSize = False
+    Caption = 'Partial compare'
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    TabOrder = 2
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 370
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Cancel'
+    OnClick = SpeedButton2Click
+  end
+  object ComboBox2: TComboBox
+    Left = 160
+    Height = 25
+    Top = 173
+    Width = 80
+    ItemHeight = 0
+    Items.Strings = (
+      '='
+      '<>'
+      '<'
+      '<='
+      '>'
+      '>='
+    )
+    OnEditingDone = ComboBox2EditingDone
+    OnKeyDown = ComboBox2KeyDown
+    OnKeyPress = ComboBox2KeyPress
+    TabOrder = 6
+  end
+  object sgFields: TStringGrid
+    Left = 8
+    Height = 299
+    Top = 5
+    Width = 339
+    ColCount = 6
+    Columns = <    
+      item
+        ButtonStyle = cbsCheckboxColumn
+        Color = clBtnFace
+        Title.Caption = '[X]'
+        Width = 27
+      end    
+      item
+        Font.Height = -12
+        Font.Name = 'Sans'
+        Font.Style = [fsItalic]
+        ReadOnly = True
+        Title.Caption = ' Select Field(s) '
+        Width = 120
+      end    
+      item
+        Alignment = taCenter
+        Font.Height = -12
+        Font.Name = 'Sans'
+        Font.Style = [fsBold]
+        Title.Alignment = taCenter
+        Title.Caption = 'Op.'
+        Width = 50
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = ' Filter String'
+        Width = 120
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Native'
+        Visible = False
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Digit'
+        Visible = False
+      end>
+    FixedCols = 0
+    Font.Height = -12
+    Font.Name = 'Sans'
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goEditing, goAlwaysShowEditor, goSmoothScroll]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -12
+    TitleFont.Name = 'Sans'
+    OnCheckboxToggled = sgFieldsCheckboxToggled
+    OnKeyDown = sgFieldsKeyDown
+    OnKeyPress = sgFieldsKeyPress
+    OnSelectEditor = sgFieldsSelectEditor
+  end
+end

@@ -1,0 +1,65 @@
+object frTableFields: TfrTableFields
+  Left = 776
+  Height = 319
+  Top = 180
+  Width = 268
+  BorderStyle = bsSingle
+  Caption = 'Available Fields'
+  ClientHeight = 319
+  ClientWidth = 268
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object sgFields: TStringGrid
+    Left = 0
+    Height = 270
+    Top = 0
+    Width = 268
+    Align = alTop
+    BorderStyle = bsNone
+    ColCount = 3
+    Columns = <    
+      item
+        Title.Caption = 'Field Name'
+        Width = 140
+      end    
+      item
+        Title.Caption = 'Field  Type'
+        Width = 100
+      end    
+      item
+        Title.Caption = 'NativeType'
+        Visible = False
+      end>
+    DefaultRowHeight = 19
+    FixedCols = 0
+    Flat = True
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect, goSmoothScroll]
+    RowCount = 1
+    ScrollBars = ssVertical
+    TabOrder = 0
+    TitleFont.Height = -11
+    TitleFont.Name = 'Sans'
+    OnDblClick = sgFieldsDblClick
+    ColWidths = (
+      140
+      100
+      0
+    )
+  end
+  object btnAdd: TSpeedButton
+    Left = 147
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'Add'
+    OnClick = btnAddClick
+  end
+  object btnCancel: TSpeedButton
+    Left = 46
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'Cancel'
+    OnClick = btnCancelClick
+  end
+end

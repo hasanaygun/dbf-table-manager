@@ -1,0 +1,60 @@
+object frmIndexHelp: TfrmIndexHelp
+  Left = 243
+  Height = 411
+  Top = 103
+  Width = 476
+  BorderStyle = bsSingle
+  Caption = 'Index Field and Expression'
+  ClientHeight = 411
+  ClientWidth = 476
+  Position = poScreenCenter
+  LCLVersion = '1.6.4.0'
+  object RichMemo1: TRichMemo
+    Left = 6
+    Height = 363
+    Top = 3
+    Width = 465
+    Enabled = False
+    HideSelection = False
+    Lines.Strings = (
+      ''
+      '  Index Field(s) or Expression:'
+      '  You can define indexes for the table by clicking the button "New".'
+      '  In the new window, select one field and click the button "Add".'
+      '  Enter a name for the index. You can insert an expression between'
+      '  fields (like Field1 + Field2 or like DTOS(DateField)+StringField).'
+      '  You can also set the options for the index (primary, unique, etc...).'
+      '  Finally confirm by clicking the "Save" button.'
+      '  Expressions:'
+      '  Expressions are used in indexes. When adding an index, you need to'
+      '  supply an index expression.'
+      '  Supported functions:'
+      '  UPPER(stringfield)'
+      '  Returns the uppercase equivalent of stringfield'
+      '  LOWER(stringfield)'
+      '  Returns the lowercase equivalent of stringfield'
+      '  DTOS(datefield)'
+      '  Converts datefield to a string with representation YYYYMMDD'
+      '  To set an index on a date/time field, use DTOS function.'
+      '  STR( numericfield,size,precision )'
+      '  Converts a number field to a string with optional size and precision.'
+      '  SUBSTR(stringfield,index,count)'
+      '  Index expressions that return a string may be maximum 100 characters long.'
+    )
+    Rtf = '{\rtf1\ansi\ansicp1252\deff0\deflan1033{\fonttbl{\f0\fcharset0 Liberation Sans;}{\f1\fcharset0 Sans;}}{\colortbl;\red33\green33\blue33;\red128\green0\blue128;\red255\green0\blue0;}\f0\fs18\cf1 \pard\li0\sl200\slmult1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs18\b Index Field(s) or Expression:\f0\fs18\b0 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 You can define indexes for the table by clicking the button "\f1\fs16\b New\f1\fs16\b0 ".\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   In the new window, select one field and click the button "\f1\fs16\b Add\f1\fs16\b0 ".\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   Enter a name for the index.\f0\fs18  \f1\fs16 You can insert an expression between\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   fields (like \f1\fs16\b Field1\f1\fs16\b0  + \f1\fs16\b Field2\f1\fs16\b0  or like \f1\fs16\b\cf2 DTOS(\f1\fs16\b\cf1 DateField\f1\fs16\b\cf2 )\f1\fs16\b0\cf1 +\f1\fs16\b StringField\f1\fs16\b0 ).\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   You can also set the options for the index (primary, unique, etc...).\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   Finally confirm by clicking the "\f1\fs16\b Save\f1\fs16\b0 " button.\f1\fs16 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b Expressions:\f0\fs18\b0 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Expressions are used in indexes. When adding an index, you need to\f1\fs16 \par \f1\fs16 \pard\li0\sl200\slmult1   supply an index expression.\f1\fs16 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b Supported functions:\f0\fs18\b0 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b\cf3 UPPER(\f0\fs18\b0\cf1 stringfield\f0\fs18\b\cf3 )\f0\fs18\b0\cf1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Returns the uppercase equivalent of stringfield\f0\fs18 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b\cf3 LOWER(\f0\fs18\b0\cf1 stringfield\f0\fs18\b\cf3 )\f0\fs18\b0\cf1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Returns the lowercase equivalent of stringfield\f0\fs18 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b\cf3 DTOS(\f0\fs18\b0\cf1 date\f0\fs18 field\f0\fs18\b\cf3 )\f0\fs18\b0\cf1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Converts datefield to a string with representation YYYYMMDD\f1\fs16 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 To set an index on a date/time field, use DTOS function\f0\fs18 .\f0\fs18 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b\cf3 STR(\f0\fs18\b0\cf1  numericfield,size,precision \f0\fs18\b\cf3 )\f0\fs18\b0\cf1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Converts a number field to a string with optional size and precision\f1\fs16 .\f0\fs18 \par \f0\fs18 \pard\li0\sl200\slmult1   \f0\fs18\b\cf3 SUBSTR(\f0\fs18\b0\cf1 stringfield,index,count\f0\fs18\b\cf3 )\f0\fs18\b0\cf1 \par \f0\fs18 \pard\li0\sl200\slmult1   \f1\fs16 Index expressions that return a string may be maximum 100 characters long.\f0\fs18 \par }'
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+    ZoomFactor = 1
+  end
+  object Button1: TButton
+    Left = 201
+    Height = 25
+    Top = 374
+    Width = 75
+    Cancel = True
+    Caption = 'Close'
+    ModalResult = 1
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end
