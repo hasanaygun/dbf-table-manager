@@ -30,4 +30,4 @@ lib/
 *.app/
 
 dbfmanager
-
+*.tar.gz
